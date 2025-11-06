@@ -1,0 +1,26 @@
+// ALUOp funct3 opb5 funct7b5 ALUControlExpected
+
+// ALUOp=00 → ADD
+00_000_0_0_000
+
+// ALUOp=01 → SUB
+01_000_0_0_001
+
+// ALUOp=10 funct3=000, opb5/funct7b5≠11 → ADD
+10_000_0_0_000
+10_000_1_0_000
+10_000_0_1_000
+
+// ALUOp=10 funct3=000, opb5=1 funct7b5=1 → SUB
+10_000_1_1_001
+
+// ALUOp=10 funct3=010 → SLT
+10_010_0_0_101
+
+// ALUOp=10 funct3=110 → OR
+10_110_0_0_011
+
+// ALUOp=10 funct3=111 → AND
+10_111_0_0_010
+
+xxxxxxxxxx
